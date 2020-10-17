@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^home$ index.php [L]
+RewriteRule ^formulire$ formulir.php [L]
+RewriteRule ^ceksipe$ ceksip.php [L]
+RewriteRule ^daftare$ daftar.php [L]
+RewriteRule ^faskese$ faskes.php [L]
+RewriteRule ^faskese$ faskes.php [L]
+RewriteRule ^formulire$ formulir.php [L]
+RewriteRule ^tambah_anggotae$ tambah_anggota.php [L]
+RewriteRule ^forme-(.*)$ form.php?id=$1 [L]
+RewriteRule ^uplod_filee-(.*)$ uplod_file.php?id=$1 [L]
+RewriteRule ^suksese-(.*)$ sukses.php?id=$1 [L]
+RewriteRule ^formulir_Cetake-(.*)$ formulir_Cetak.php?id=$1 [L]
+
+
+ErrorDocument 404 http://sipnakes.ip-dynamic.com/siponline/404.html
+ErrorDocument 403 http://sipnakes.ip-dynamic.com/siponline/403.html
+Options All -Indexes
+
+</IfModule>
